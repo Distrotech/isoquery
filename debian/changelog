@@ -1,0 +1,56 @@
+isoquery (0.14-1) unstable; urgency=low
+
+  * New upstream release
+    - Fix bug which could cause isoquery to throw an Glib::ConvertError.
+      Thanks to George Danchev for the bug report. Closes: #474534
+  * Use hardening-wrapper on m68k as well
+  * Change Maintainer's e-mail address
+  * Correct URL of public git repository
+  * Remove DM upload rights, they are no longer needed
+
+ -- Tobias Toedter <toddy@debian.org>  Thu, 24 Apr 2008 10:58:10 +0200
+
+isoquery (0.13-1) unstable; urgency=low
+
+  * New upstream release
+  * Build-Depend on hardening-wrapper
+
+ -- Tobias Toedter <t.toedter@gmx.net>  Wed, 12 Mar 2008 09:20:28 +0100
+
+isoquery (0.12-1) unstable; urgency=low
+
+  * New upstream version
+    - Add #include statements required by GCC 4.3. Thanks to
+      Martin Michlmayr for the bug report and patch. Closes: #462206
+
+ -- Tobias Toedter <t.toedter@gmx.net>  Thu, 24 Jan 2008 12:29:45 +0000
+
+isoquery (0.11-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Tobias Toedter <t.toedter@gmx.net>  Wed, 09 Jan 2008 11:01:43 +0100
+
+isoquery (0.10-1) unstable; urgency=low
+
+  * New upstream version
+  * Recommend iso-codes. Thanks to Tony Mancill and Trent W. Buck for
+    pointing this out. Closes: #458614
+  * Update copyright years
+  * Update Vcs-* fields to new git repository
+
+ -- Tobias Toedter <t.toedter@gmx.net>  Wed, 02 Jan 2008 12:00:58 +0100
+
+isoquery (0.9-2) unstable; urgency=low
+
+  * Mention that src/gettext.h is licensed under LGPL in debian/copyright.
+    Thanks to Joerg Jaspert for pointing this out.
+
+ -- Tobias Toedter <t.toedter@gmx.net>  Fri, 28 Dec 2007 15:06:44 +0100
+
+isoquery (0.9-1) unstable; urgency=low
+
+  * Initial release (Closes: #453445)
+
+ -- Tobias Toedter <t.toedter@gmx.net>  Thu, 22 Nov 2007 10:50:30 +0100
+
