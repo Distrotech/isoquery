@@ -1,0 +1,69 @@
+Isoquery 0.14
+=============
+24 April 2008
+
+* Fix bug which could cause isoquery to throw an Glib::ConvertError.
+  Thanks to George Danchev for the bug report. Closes: #474534
+
+
+Isoquery 0.13
+=============
+12 March 2008
+
+* Use C++ vectors for the list of possible xpaths
+* New command line options "-0" and "--null" to separate the output
+  with NULL characters instead of newline
+* Translation updates:
+  - French, thanks to Christian Perrier
+  - German, thanks to Tobias Toedter
+
+
+Isoquery 0.12
+=============
+24 January 2008
+
+* Add #include statements required by GCC 4.3. Thanks to
+  Martin Michlmayr for the bug report and patch. Closes: #462206
+* Better error message if the XML input file cannot be opened
+* Translation updates:
+  - French, thanks to Christian Perrier
+  - German, thanks to Tobias Toedter
+
+
+Isoquery 0.11
+=============
+9 January 2008
+
+* Require po4a in configure script for manpage translations
+* Require pkg-config and libxml++ (>2.6.0) in configure script
+* Add support for ISO 15924
+* Update tests to pass with iso-codes 1.8
+* Update French translation, thanks to Christian Perrier
+
+
+Isoquery 0.10
+=============
+2 January 2008
+
+* Bug fix:
+  The codes in ISO 639 were shown twice if 2B and 2T code are
+  identical. Examples are vie, swa.
+* Setup testing framework to catch regression bugs
+* Remove call to bindtextdomain(), enabling translations of the
+  program output itself
+
+
+Isoquery 0.9
+============
+13 November 2007
+
+* Add man page
+* Use po4a to translate man page into German
+
+
+Isoquery 0.8
+============
+UNRELEASED
+
+* Initial setup, using basic classes and C++ code
+* Perform gettextize on source code
