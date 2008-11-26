@@ -1,3 +1,10 @@
+isoquery (0.17-1) unstable; urgency=low
+
+  * New upstream release
+  * Change maintainer's last name to Quathamer
+
+ -- Tobias Quathamer <toddy@debian.org>  Wed, 26 Nov 2008 10:12:47 +0100
+
 isoquery (0.16-1) unstable; urgency=low
 
   * New upstream release

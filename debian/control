@@ -1,7 +1,7 @@
 Source: isoquery
 Section: misc
 Priority: optional
-Maintainer: Tobias Toedter <toddy@debian.org>
+Maintainer: Tobias Quathamer <toddy@debian.org>
 Build-Depends: autotools-dev, debhelper (>= 5), hardening-wrapper, libxml++2.6-dev, po4a
 Standards-Version: 3.8.0
 Vcs-Browser: http://git.debian.org/?p=users/toddy/isoquery.git;a=summary
