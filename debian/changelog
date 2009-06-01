@@ -1,3 +1,13 @@
+isoquery (0.18-1) unstable; urgency=low
+
+  * New upstream release
+  * Switch to debhelper v7, reduce debian/rules
+  * Update debian/copyright and replace (C) with ©
+  * Update to Standards-Version 3.8.1, no changes needed
+  * Add ${misc:Depends} to debian/control to fix a Lintian warning
+
+ -- Tobias Quathamer <toddy@debian.org>  Mon, 01 Jun 2009 07:52:40 +0200
+
 isoquery (0.17-1) unstable; urgency=low
 
   * New upstream release

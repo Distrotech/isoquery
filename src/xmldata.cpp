@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2008 Tobias Quathamer
+ * Copyright (C) 2007-2009 Tobias Quathamer
  * 
  * This file is part of Isoquery.
  * 
@@ -27,12 +27,12 @@
 #include <cstring>
 #include <iostream>
 #include <fstream>
-#include <libintl.h>
 #include <vector>
 using namespace std;
+#include "gettext.h"
+#include "xmldata.h"
 
 #define _ gettext
-#include "xmldata.h"
 
 
 
