@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2008 Tobias Toedter
+ * Copyright (C) 2007-2009 Tobias Quathamer
  * 
  * This file is part of Isoquery.
  * 
@@ -24,7 +24,7 @@
 #endif
 
 #include <cstdlib>
-#include <libintl.h>
+#include "gettext.h"
 #include "option_parser.h"
 #include "xmldata.h"
 

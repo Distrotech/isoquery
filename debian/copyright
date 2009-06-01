@@ -1,15 +1,15 @@
-This package was debianized by Tobias Toedter <toddy@debian.org> on
+This package was debianized by Tobias Quathamer <toddy@debian.org> on
 Thu, 22 Nov 2007 10:50:30 +0100.
 
 It was downloaded from <ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/>
 
 Upstream Author: 
 
-    Tobias Toedter <toddy@debian.org>
+    Tobias Quathamer <toddy@debian.org>
 
 Copyright: 
 
-    Copyright (C) 2007-2008 Tobias Toedter <toddy@debian.org>
+    Copyright © 2007-2009 Tobias Quathamer <toddy@debian.org>
 
 License:
 
@@ -29,12 +29,12 @@ License:
 On Debian systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL-3'.
 
-The Debian packaging is Copyright 2007-2008 Tobias Toedter <toddy@debian.org>
+The Debian packaging is Copyright © 2007-2009 Tobias Quathamer <toddy@debian.org>
 and is licensed under the GPL, see above.
 
 Copyright for the file src/gettext.h:
 
-    Copyright (C) 1995-1998, 2000-2002, 2004-2006 Free Software Foundation, Inc.
+    Copyright © 1995-1998, 2000-2002, 2004-2006 Free Software Foundation, Inc.
 
 License for the file src/gettext.h:
 
@@ -54,3 +54,4 @@ License for the file src/gettext.h:
 
 On Debian systems, the complete text of the GNU Lesser General
 Public License can be found in `/usr/share/common-licenses/LGPL-2'.
+
