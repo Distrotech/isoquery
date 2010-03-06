@@ -1,3 +1,10 @@
+isoquery (0.18-1build1) lucid; urgency=low
+
+  * rebuild rest of main for armel armv7/thumb2 optimization;
+    UbuntuSpec:mobile-lucid-arm-gcc-v7-thumb2
+
+ -- Alexander Sack <asac@ubuntu.com>  Sat, 06 Mar 2010 13:28:57 +0100
+
 isoquery (0.18-1) unstable; urgency=low
 
   * New upstream release
