@@ -1,3 +1,27 @@
+Isoquery 1.1
+============
+28 July 2010
+
+* Fix errors in manpages with overlong lines
+* Rewrite generation of manpages with waf build system
+* French translation update, thanks to Christian Perrier. Closes: #589554
+* New translations:
+  - Russian, thanks to Yuri Kozlov. Closes: #589521
+  - Swedish, thanks to Martin Bagge / brother <brother@bsnet.se>
+  - Czech, thanks to Michal Šimůnek. Closes: #589719
+  - Danish, thanks to Joe Hansen. Closes: #589861
+  - Sinhala, thanks to Danishka Navin.
+  - Spanish, thanks to Omar Campagne. Closes: #590564
+
+
+Isoquery 1.0
+============
+30 June 2010
+
+* Complete rewrite of program in Python
+* Support of ISO 639-3 and ISO 3166-2
+
+
 Isoquery 0.18
 =============
 1 June 2009
