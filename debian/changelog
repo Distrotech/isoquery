@@ -1,3 +1,28 @@
+isoquery (1.1-1) unstable; urgency=low
+
+  * New upstream release
+    - French translation update, thanks to Christian Perrier. Closes: #589554
+    - New translation to Russian, thanks to Yuri Kozlov. Closes: #589521
+    - New translation to Czech, thanks to Michal Šimůnek. Closes: #589719
+    - New translation to Danish, thanks to Joe Hansen. Closes: #589861
+    - New translation to Spanish, thanks to Omar Campagne. Closes: #590564
+  * Add python-docutils and po4a to Build-Depends-Indep for manpage
+    generation with rst2man and translation with po4a
+  * Update to Standards-Version 3.9.1, no changes needed
+
+ -- Tobias Quathamer <toddy@debian.org>  Wed, 28 Jul 2010 10:45:25 +0200
+
+isoquery (1.0-1) experimental; urgency=low
+
+  * New upstream release
+    - Complete rewrite in Python
+  * Add python-support to Build-Depends-Indep
+  * Add python-lxml to Depends
+  * Switch to dpkg source format 3.0 (quilt)
+  * Update to Standards-Version 3.9.0, no changes needed
+
+ -- Tobias Quathamer <toddy@debian.org>  Wed, 30 Jun 2010 21:48:02 +0200
+
 isoquery (0.18-1) unstable; urgency=low
 
   * New upstream release
@@ -83,4 +108,3 @@ isoquery (0.9-1) unstable; urgency=low
   * Initial release (Closes: #453445)
 
  -- Tobias Toedter <t.toedter@gmx.net>  Thu, 22 Nov 2007 10:50:30 +0100
-

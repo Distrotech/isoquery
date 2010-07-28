@@ -2,14 +2,15 @@ Source: isoquery
 Section: misc
 Priority: optional
 Maintainer: Tobias Quathamer <toddy@debian.org>
-Build-Depends: autotools-dev, debhelper (>= 7), hardening-wrapper, libxml++2.6-dev, po4a
-Standards-Version: 3.8.1
+Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends-Indep: python-support, python-docutils, po4a
+Standards-Version: 3.9.1
 Vcs-Browser: http://git.debian.org/?p=users/toddy/isoquery.git;a=summary
 Vcs-Git: git://git.debian.org/~toddy/isoquery.git
 
 Package: isoquery
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, python-lxml
 Recommends: iso-codes
 Description: Search and display various ISO codes (country, language, ...)
  This program can be used to generate a tabular output of the ISO standard

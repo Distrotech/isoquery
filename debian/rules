@@ -1,24 +1,23 @@
 #!/usr/bin/make -f
 
-export DEB_BUILD_HARDENING=1
-
-build:
-	dh_testdir
-ifneq "$(wildcard /usr/share/misc/config.sub)" ""
-	cp -f /usr/share/misc/config.sub config.sub
-endif
-ifneq "$(wildcard /usr/share/misc/config.guess)" ""
-	cp -f /usr/share/misc/config.guess config.guess
-endif
-	dh $@
-
-
-clean:
-	dh $@
-	rm -f config.sub config.guess
-
 %:
-	dh $@
+	dh  $@
 
-.PHONY: build clean
+# debhelper v7 does not yet support the waf build system, so
+# some helpers need to be overridden.
 
+override_dh_auto_clean:
+	./waf distclean
+	# Remove __init__.pyc, which is skipped by waf
+	rm -f isoquery/__init__.pyc
+
+override_dh_auto_configure:
+	./waf configure --prefix=/usr
+
+override_dh_auto_build:
+	./waf build
+
+override_dh_auto_install:
+	./waf --destdir=$(CURDIR)/debian/isoquery install
+	# Remove ChangeLog, which gets automatically installed
+	rm -f $(CURDIR)/debian/isoquery/usr/share/doc/isoquery/ChangeLog
