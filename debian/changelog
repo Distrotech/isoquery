@@ -1,3 +1,12 @@
+isoquery (1.2-1) unstable; urgency=low
+
+  * New upstream release
+    - Fix invalid syntax for Python 2.4. Thanks to Cristian Ionescu-Idbohrn
+      for the bug report and patch. Closes: #591035
+  * Update watch file
+
+ -- Tobias Quathamer <toddy@debian.org>  Sat, 31 Jul 2010 18:05:00 +0200
+
 isoquery (1.1-1) unstable; urgency=low
 
   * New upstream release
