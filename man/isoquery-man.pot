@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-07-31 18:00+0200\n"
+"POT-Creation-Date: 2010-08-15 18:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,8 +37,8 @@ msgstr ""
 #: ./isoquery.rst:11
 #, no-wrap
 msgid ""
-":Date:            2010-07-31\n"
-":Version:         1.2\n"
+":Date:            2010-08-15\n"
+":Version:         1.3\n"
 ":Manual section:  1\n"
 msgstr ""
 
@@ -231,7 +231,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "  $ isoquery --iso=3166-2\n"
-"  AD      Parish  AD-07           Andorra la Vella\n"
+"  AD      Parish          AD-07           Andorra la Vella\n"
 "  [...]\n"
 "  ZW      Province        ZW-MI           Midlands\n"
 msgstr ""
