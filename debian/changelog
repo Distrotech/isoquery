@@ -1,3 +1,24 @@
+isoquery (1.4-1) unstable; urgency=low
+
+  * New upstream release
+    - New translation to Vietnamese, thanks to Clytie Siddall.
+      Closes: #598618
+
+ -- Tobias Quathamer <toddy@debian.org>  Sat, 02 Oct 2010 21:53:20 +0200
+
+isoquery (1.3-1) unstable; urgency=low
+
+  * New upstream release
+    - New translation to Portuguese, thanks to Américo Monteiro.
+      Closes: #592431
+    - New manpage translation to Portuguese, thanks to Américo Monteiro.
+      Closes: #592433
+  * Add new package countrycodes as a transitional dummy package. This
+    eases the removal of the obsolete package countrycodes in the squeeze
+    release. Closes: #506189
+
+ -- Tobias Quathamer <toddy@debian.org>  Sun, 15 Aug 2010 18:32:01 +0200
+
 isoquery (1.2-1) unstable; urgency=low
 
   * New upstream release

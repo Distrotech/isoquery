@@ -5,8 +5,8 @@ isoquery
 Search and display various ISO codes (country, language, ...)
 -------------------------------------------------------------
 
-:Date:            2010-07-31
-:Version:         1.2
+:Date:            2010-10-02
+:Version:         1.4
 :Manual section:  1
 
 
@@ -104,7 +104,7 @@ etc.), ISO 3166-2 code, parent, and name. Please note that the fourth column
 ::
 
   $ isoquery --iso=3166-2
-  AD      Parish  AD-07           Andorra la Vella
+  AD      Parish          AD-07           Andorra la Vella
   [...]
   ZW      Province        ZW-MI           Midlands
 

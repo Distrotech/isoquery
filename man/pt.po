@@ -1,16 +1,15 @@
-# Translation of Isoquery man page to German
-# This file is distributed under the same license as the Isoquery package.
+# Translation of isoquery manpage to Portuguese
+# Copyright (C) 2010 The isoquery's copyright holder
+# This file is distributed under the same license as the isoquery package.
 #
-# Copyright ©
-# Tobias Quathamer <toddy@debian.org>, 2007, 2008, 2010.
+# Américo Monteiro <a_monteiro@netcabo.pt>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: isoquery\n"
-"Report-Msgid-Bugs-To: Tobias Quathamer <toddy@debian.org>\n"
+"Project-Id-Version: isoquery-man 1.2-1\n"
 "POT-Creation-Date: 2010-10-02 21:45+0200\n"
-"PO-Revision-Date: 2010-10-02 21:45+0200\n"
-"Last-Translator: Tobias Quathamer <toddy@debian.org>\n"
-"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"PO-Revision-Date: 2010-10-02 21:45+0100\n"
+"Last-Translator: Américo Monteiro <a_monteiro@netcabo.pt>\n"
+"Language-Team: Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,12 +28,11 @@ msgstr "========\n"
 msgid "isoquery\n"
 msgstr "isoquery\n"
 
-# type: Plain text
 #. type: Title -
 #: isoquery.rst:6
 #, no-wrap
 msgid "Search and display various ISO codes (country, language, ...)\n"
-msgstr "Suche und Anzeige verschiedener ISO-Codes (Land, Sprache, ...)\n"
+msgstr "Procura e mostra vários códigos ISO (país, linguagem, ...)\n"
 
 #. type: Plain text
 #: isoquery.rst:11
@@ -48,28 +46,24 @@ msgstr ""
 ":Version:         1.4\n"
 ":Manual section:  1\n"
 
-# type: SH
 #. type: Title =
 #: isoquery.rst:14
 #, no-wrap
 msgid "SYNOPSIS\n"
-msgstr "ÜBERSICHT\n"
+msgstr "SINOPSE\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:17
 #, no-wrap
 msgid "**isoquery** [*options*] [*file*] [*ISO codes*]\n"
-msgstr "**isoquery** [*Optionen*] [*Datei*] [*ISO-Codes*]\n"
+msgstr "**isoquery** [*opções*] [*ficheiro*] [*códigos ISO*]\n"
 
-# type: SH
 #. type: Title =
 #: isoquery.rst:20
 #, no-wrap
 msgid "DESCRIPTION\n"
-msgstr "BESCHREIBUNG\n"
+msgstr "DESCRIÇÃO\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:29
 msgid ""
@@ -79,111 +73,108 @@ msgid ""
 "or just matching entries, if specified on the command line.  Moreover, it's "
 "possible to get all available translations for the ISO standard."
 msgstr ""
-"Diese Handbuchseite erläutert kurz das Programm **isoquery**. Es kann dazu "
-"verwendet werden, die vom Paket iso-codes zur Verfügung gestellten ISO-"
-"Standard-Codes tabellarisch auszugeben. Es wertet die XML-Dateien aus und "
-"zeigt entweder alle enthaltenen ISO-Codes oder lediglich passende Einträge, "
-"wenn diese auf der Kommandozeile angegeben werden. Außerdem ist es möglich, "
-"alle verfügbaren Übersetzungen für den ISO-Standard zu erhalten."
+"Este manual documenta brevemente o comando **isoquery**. Pode ser usado para "
+"gerar uma saída tabular dos códigos standard ISO disponibilizados pelo "
+"pacote iso-codes. Analisa os ficheiros XML e mostra todos os códigos ISO "
+"incluídos ou apenas as entradas correspondentes, se tal for especificado na "
+"linha de comandos. Mais ainda, é possível obter todas as traduções "
+"disponíveis para o ISO standard."
 
-# type: SH
 #. type: Title =
 #: isoquery.rst:32
 #, no-wrap
 msgid "OPTIONS\n"
-msgstr "OPTIONEN\n"
+msgstr "OPÇÕES\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:36
 msgid ""
 "This program follows the usual GNU command line syntax, with long options "
 "starting with two dashes ('-'). **isoquery** supports the following options:"
 msgstr ""
-"Dieses Programm folgt dem üblichen Format der GNU Kommandozeilenoptionen, in "
-"dem lange Optionen mit zwei Minuszeichen beginnen (»-«). **isoquery** "
-"unterstützt die folgenden Optionen:"
+"Este programa segue a sintaxe de linha de comandos normal do GNU, com as "
+"opções longas a começarem com dois traços ('-'). O **isoquery** suporta as "
+"seguintes opções:"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:39
 #, no-wrap
 msgid ""
 "-i NUMBER, --iso=NUMBER     The ISO standard to use. Possible values: 639,\n"
 "                            639-3, 3166, 3166-2, 4217, 15924 (default: 3166)\n"
-msgstr "-i NUMMER, --iso=NUMMER     Der gewünschte ISO-Standard. Mögliche Werte: 639, 639-3, 3166, 3166-2, 4217, 15924 (Voreinstellung: 3166)"
+msgstr ""
+"-i NUMERO, --iso=NUMERO     O ISO standard a usar. Valores possíveis: 639,\n"
+"                            639-3, 3166, 3166-2, 4217, 15924 (predefinição: 3166)\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:42
 #, no-wrap
 msgid ""
 "-x FILE, --xmlfile=FILE     Use another XML file with ISO data.\n"
 "                            (default: /usr/share/xml/iso-codes/iso_3166.xml)\n"
-msgstr "-x DATEI, --xmlfile=DATEI   Eine andere XML-Datei mit ISO-Daten verwenden (Voreinstellung: /usr/share/xml/iso-codes/iso_3166.xml)"
+msgstr ""
+"-x FICHEIRO, --xmlfile=FICHEIRO     Usa outro ficheiro XML com dados ISO.\n"
+"                            (predefinição: /usr/share/xml/iso-codes/iso_3166.xml)\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:44
 msgid "-l LOCALE, --locale=LOCALE Use this locale for output."
-msgstr "-l LOCALE, --locale=LOCALE  Diese Locale für die Ausgabe verwenden."
+msgstr "-l LOCALE, --locale=LOCALE  Use este locale para os resultados."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:46
 #, no-wrap
 msgid "-n, --name                  Name for the supplied codes (default)\n"
-msgstr "-n, --name                  Name der übergebenen Codes (Voreinstellung)"
+msgstr "-n, --name                  Nome para os códigos fornecidos (predefinição)\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:49
 #, no-wrap
 msgid ""
 "-o, --official_name         Official name for the supplied codes. This may be\n"
 "                            the same as --name. (Only applies to ISO 3166)\n"
-msgstr "-o, --official_name         Offizieller Name der übergebenen Codes. Dies kann das Gleiche sein wie --name. (Gilt nur für ISO 3166)"
+msgstr ""
+"-o, --official_name         Nome oficial dos códigos fornecidos. Isto pode ser\n"
+"                            o mesmo que --name. (Apenas se aplica ao ISO 3166)\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:52
 #, no-wrap
 msgid ""
 "-c, --common_name           Common name for the supplied codes. This may be\n"
 "                            the same as --name. (Only applies to ISO 3166)\n"
-msgstr "-c, --common_name           Üblicher Name der übergebenen Codes. Dies kann das Gleiche sein wie --name. (Gilt nur für ISO 3166)"
+msgstr ""
+"-c, --common_name           Nome comum dos códigos fornecidos. Isto pode ser\n"
+"                            o mesmo que --name. (Apenas se aplica ao ISO 3166)\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:55
 #, no-wrap
 msgid ""
 "-0, --null                  Separate entries with a NULL character instead\n"
 "                            of newline.\n"
-msgstr "-0, --null                  Einträge durch ein NULL-Zeichen anstatt des Zeilenumbruches voneinander trennen."
+msgstr ""
+"-0, --null                  Separa as entradas com um caractere NULO em vez de\n"
+"                            nova linha.\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:57
 #, no-wrap
 msgid "-h, --help                  Show summary of options.\n"
-msgstr "-h, --help                  Anzeige dieser Informationen."
+msgstr "-h, --help                  Mostra o sumário de opções.\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:59
 #, no-wrap
 msgid "-v, --version               Show program version and copyright.\n"
-msgstr "-v, --version               Anzeige der Programmversion und des Copyrights."
+msgstr "-v, --version               Mostra a versão do programa e o copyright.\n"
 
-# type: SH
 #. type: Title =
 #: isoquery.rst:62
 #, no-wrap
 msgid "EXAMPLES\n"
-msgstr "BEISPIELE\n"
+msgstr "EXEMPLO\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:68
 msgid ""
@@ -192,10 +183,10 @@ msgid ""
 "code, the alpha-3 code, and the numerical code assigned to the country "
 "listed in the fourth column."
 msgstr ""
-"Wenn **isoquery** ohne Kommandozeilenoptionen aufgerufen wird, gibt das "
-"Programm eine Tabelle mit allen ISO 3166 Codes aus. Die ersten drei Spalten "
-"enthalten den Alpha-2-Code, den Alpha-3-Code und den nummerischen Code, die "
-"dem Land zugewiesen sind, das in der vierten Spalte aufgelistet wird."
+"Se chamado sem nenhumas opções de linha de comandos, o **isoquery** irá "
+"escrever uma tabela de todos os códigos ISO 3166. As três primeiras colunas "
+"contêm o código alpha-2, o código alpha-3 e o código numérico atribuído ao "
+"país listado na quarta coluna."
 
 #. type: Plain text
 #: isoquery.rst:70 isoquery.rst:80 isoquery.rst:92 isoquery.rst:105
@@ -204,7 +195,6 @@ msgstr ""
 msgid "::"
 msgstr "::"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:75
 #, no-wrap
@@ -219,18 +209,15 @@ msgstr ""
 "  [...]\n"
 "  ZW      ZWE     716     Zimbabwe\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:78
 msgid ""
 "If you need only some countries, you can specify any of the codes in the "
 "first three columns to cut down the output."
 msgstr ""
-"Wenn Sie nur einige Länder benötigen, können Sie Codes angeben, die in den "
-"ersten drei Spalten angezeigt werden. Dadurch wird die Ausgabe auf die "
-"passenden Einträge beschränkt."
+"Se você apenas precisa de alguns países, pode especificar quaisquer dos "
+"códigos nas primeiras três colunas e cortar nos resultados."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:85
 #, no-wrap
@@ -245,7 +232,6 @@ msgstr ""
 "  NO      NOR     578     Norway\n"
 "  MX      MEX     484     Mexico\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:90
 msgid ""
@@ -254,12 +240,10 @@ msgid ""
 "English name will be shown if there is no translation available for the "
 "specified locale."
 msgstr ""
-"Wenn Sie die Übersetzung der Ländernamen brauchen, geben Sie einfach die "
-"Locale an, in der Sie die Ausgabe benötigen. Bitte beachten Sie, dass der "
-"ursprüngliche englische Name angezeigt wird, wenn es für die angegebene "
-"Locale keine Übersetzung gibt."
+"Se precisar das traduções dos nomes dos países, especifique em que locale "
+"deseja ver os resultados. Por favor note que será mostrado o nome original "
+"em Inglês se não existir uma tradução disponível para o locale especificado."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:97
 #, no-wrap
@@ -274,7 +258,6 @@ msgstr ""
 "    DE      DEU     276     Duitsland\n"
 "    ES      ESP     724     Spanje\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:103
 msgid ""
@@ -284,14 +267,12 @@ msgid ""
 "Province, etc.), ISO 3166-2 code, parent, and name. Please note that the "
 "fourth column (parent) may be empty."
 msgstr ""
-"All das oben gesagte funktioniert ebenso für andere ISO-Standards, so können "
-"Sie beispielsweise mit der Kommandozeilenoption --iso auf den "
-"ausführlicheren Standard ISO 3166-2 umstellen. Die Spalten sind Ländercode, "
-"Art des Unterbereichs (z. B. Bundesstaat, Provinz usw.), der ISO 3166-2 "
-"Code, der übergeordnete Bereich sowie der Name. Bitte beachten Sie, dass die "
-"vierte Spalte (übergeordneter Bereich) leer sein kann."
+"Tudo em cima funciona também para diferentes ISO standards, portanto você "
+"pode mudar para o standard ISO 3166-2 mais extensivo usando a opção --iso na "
+"linha de comandos. A colunas são código de país, tipo de subconjunto (ex. "
+"Estado, Província, etc), código ISO 3166-2, pai e nome. Por favor note que a "
+"quarta coluna (pai) pode estar vazia."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:110
 #, no-wrap
@@ -306,17 +287,15 @@ msgstr ""
 "  [...]\n"
 "  ZW      Province        ZW-MI           Midlands\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:113
 msgid ""
 "For ISO 639, the first three columns are the ISO 639 2B code, the ISO 639 2T "
 "code and the ISO 639-1 code. The third column may be empty."
 msgstr ""
-"Bei ISO 639 enthalten die ersten drei Spalten den ISO 639 2B Code, den ISO "
-"639 2T Code und den ISO 639-1 Code. Die dritte Spalte kann leer sein."
+"Para ISO 639, as primeiras três colunas são o código ISO 639 2B, o código "
+"ISO 639 2T e o código ISO 639-1. A terceira coluna pode estar vazia."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:124
 #, no-wrap
@@ -339,18 +318,15 @@ msgstr ""
 "  zxx     zxx             No linguistic content\n"
 "  zza     zza             Zaza; Dimili; Dimli; Kirdki\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:127
 msgid ""
 "You can trim down the results by specifying only some codes. Moreover, the "
 "option to get translated names is also available."
 msgstr ""
-"Sie können die Ergebnisse einschränken, indem Sie nur einzelne Codes "
-"angeben. Weiterhin ist auch hier die Möglichkeit vorhanden, übersetzte Namen "
-"zu erhalten."
+"Você pode 'aparar' os resultados ao especificar apenas alguns códigos. Mais "
+"ainda, a opção para obter nomes traduzidos está também disponível."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:134
 #, no-wrap
@@ -372,11 +348,10 @@ msgid ""
 "part 1 code, part 2 code, and the language name. Both part 1 and part 2 may "
 "be empty."
 msgstr ""
-"Wenn Sie ISO 639-3 verwenden wollen, sind die angezeigten Spalten id, scope, "
-"type, part 1 code, part 2 code sowie der Sprachenname. Sowohl part 1 als "
-"auch part 2 können leer sein."
+"Se deseja usar ISO 639-3, as colunas mostradas são id, scope, tipo, código "
+"parte 1, código parte 2 e o nome da linguagem. Ambas parte 1 e parte 2 podem "
+"estar vazias."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:146
 #, no-wrap
@@ -393,7 +368,6 @@ msgstr ""
 "  spa     I       L       es      spa     Spanish\n"
 "  guc     I       L                       Wayuu\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:150
 msgid ""
@@ -401,12 +375,10 @@ msgid ""
 "standard by using the following command. The first two columns are the alpha-"
 "3 code and the numerical code assigned to the currency."
 msgstr ""
-"Sie können Übersetzungen für ausgewählte Währungsnamen aus dem ISO 4217 "
-"Standard erhalten, wenn Sie den folgenden Befehl eingeben. Die ersten beiden "
-"Spalten sind der Alpha-3-Code und der nummerische Code, die der Währung "
-"zugewiesen sind."
+"Você pode obter traduções seleccionadas dos nomes actuais a partir do "
+"standard ISO 4217 ao usar o seguinte comando. As primeiras duas colunas são "
+"o código alpha-3 e o código numérico atribuído à moeda."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:156
 #, no-wrap
@@ -419,7 +391,6 @@ msgstr ""
 "  CAD     124     Canadisk dollar\n"
 "  JPY     392     Japansk yen\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:160
 msgid ""
@@ -427,11 +398,10 @@ msgid ""
 "two columns are the alpha-4 code and the numerical code assigned to the "
 "script."
 msgstr ""
-"Wenn Sie Skriptnamen benötigen, können Sie die Tabelle für ISO 15924 "
-"verwenden. Die ersten beiden Spalten sind der Alpha-4-Code und der "
-"nummerische Code, die der Währung zugewiesen sind."
+"Se precisa de obter nome de script, você pode usar a tabela ISO 15924. As "
+"primeiras duas colunas são o código alpha-4 e código numérico atribuído ao "
+"script."
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:167
 #, no-wrap
@@ -446,21 +416,19 @@ msgstr ""
 "  Latn    215     Latin\n"
 "  Visp    280     Visible Speech\n"
 
-# type: SH
 #. type: Title =
 #: isoquery.rst:170
 #, no-wrap
 msgid "FILES\n"
-msgstr "DATEIEN\n"
+msgstr "FICHEIROS\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:173
 msgid ""
 "By default, the XML files provided by the iso-codes package will be used."
 msgstr ""
-"In der Voreinstellung werden die Dateien verwendet, die durch das Paket iso-"
-"codes zur Verfügung gestellt werden."
+"Por predefinição, serão usados os ficheiros XML disponibilizados pelo pacote "
+"iso-codes."
 
 #. type: Plain text
 #: isoquery.rst:180
@@ -477,14 +445,12 @@ msgstr ""
 "| */usr/share/xml/iso-codes/iso_4217.xml*\n"
 "| */usr/share/xml/iso-codes/iso_15924.xml*"
 
-# type: SH
 #. type: Title =
 #: isoquery.rst:183
 #, no-wrap
 msgid "AUTHOR\n"
 msgstr "AUTOR\n"
 
-# type: Plain text
 #. type: Plain text
 #: isoquery.rst:185
 msgid "Tobias Quathamer <toddy@debian.org>"
