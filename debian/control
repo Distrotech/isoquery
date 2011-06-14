@@ -2,9 +2,9 @@ Source: isoquery
 Section: misc
 Priority: optional
 Maintainer: Tobias Quathamer <toddy@debian.org>
-Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends: debhelper (>= 8)
 Build-Depends-Indep: python-support, python-docutils, po4a
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Vcs-Browser: http://git.debian.org/?p=users/toddy/isoquery.git;a=summary
 Vcs-Git: git://git.debian.org/~toddy/isoquery.git
 

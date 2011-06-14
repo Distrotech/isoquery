@@ -1,6 +1,6 @@
 # - encoding: UTF-8 -
 #
-# Copyright © 2007-2010 Tobias Quathamer
+# Copyright © 2007-2011 Tobias Quathamer
 #
 # This file is part of isoquery.
 #
@@ -290,7 +290,7 @@ TW\tTWN\t158\tTaiwan
         xml.show_all_codes()
         self.assertEqual(output.getvalue(),
 """\
-DE\tDEU\t276\tФедеративна Республiка Німеччина
+DE\tDEU\t276\tФедеративна Республіка Німеччина
 FR\tFRA\t250\tФранцузька Республіка
 ES\tESP\t724\tКоролівство Іспанія
 TW\tTWN\t158\tТайвань, провінція Китаю
