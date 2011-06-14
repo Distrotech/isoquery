@@ -1,6 +1,6 @@
 # - encoding: UTF-8 -
 #
-# Copyright © 2007-2010 Tobias Quathamer
+# Copyright © 2007-2011 Tobias Quathamer
 #
 # This file is part of isoquery.
 #
@@ -22,8 +22,8 @@ import sys
 import StringIO
 import gettext
 from isoquery import cmdline_parser
-translation = gettext.translation('isoquery')
-_ = translation.ugettext
+translation = gettext.translation('isoquery', fallback=True)
+_ = translation.gettext
 
 class TestCmdlineParser(unittest.TestCase):
     def test_01_empty_commandline(self):
@@ -115,7 +115,7 @@ class TestCmdlineParser(unittest.TestCase):
         orig_stderr = sys.stderr
         sys.stderr = output = StringIO.StringIO()
         cmdline = "-l " + locale
-        self.assertRaises(SystemExit, p.parse, cmdline)
+        (options, args) = p.parse(cmdline)
         self.assertEqual(output.getvalue(),
                          _("isoquery: The locale '%(locale)s' is not " \
                            "available for ISO %(standard)s.\n") % \
@@ -123,7 +123,7 @@ class TestCmdlineParser(unittest.TestCase):
         # Re-open a new output for the next comparison
         sys.stderr = output = StringIO.StringIO()
         cmdline = "--locale=" + locale
-        self.assertRaises(SystemExit, p.parse, cmdline)
+        (options, args) = p.parse(cmdline)
         self.assertEqual(output.getvalue(),
                          _("isoquery: The locale '%(locale)s' is not " \
                            "available for ISO %(standard)s.\n") % \
