@@ -1,92 +1,93 @@
 # Translation of isoquery to French
-# Copyright © 2007-2010 Christian Perrier <bubulle@debian.org>.
 # This file is distributed under the same license as the isoquery package.
 #
-# Christian Perrier <bubulle@debian.org>, 2010.
+# Copyright ©
+# Christian Perrier <bubulle@debian.org>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: isoquery\n"
 "Report-Msgid-Bugs-To: toddy@debian.org\n"
-"POT-Creation-Date: 2010-06-30 19:58+0200\n"
-"PO-Revision-Date: 2010-07-17 19:09+0200\n"
+"POT-Creation-Date: 2011-06-01 23:46+0200\n"
+"PO-Revision-Date: 2011-06-02 07:40+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.2\n"
 
 #: isoquery/cmdline_parser.py:30
 msgid "Usage: %prog [options] [ISO codes]"
 msgstr "Utilisation : %prog [options] [codes ISO]"
 
 #: isoquery/cmdline_parser.py:36
-msgid "STANDARD"
-msgstr "NORME"
+msgid "standard"
+msgstr "norme"
 
 #: isoquery/cmdline_parser.py:37
 #, python-format
 msgid ""
 "The ISO standard to use. Possible values: 639, 639-3, 3166, 3166-2, 4217, "
-"15924. Default value: %default"
+"15924 (default: %default)."
 msgstr ""
 "Norme ISO à utiliser. Valeurs possibles : 639, 639-3, 3166, 3166-2, 4217, "
 "15924. Valeur par défaut : %default."
 
 #: isoquery/cmdline_parser.py:42
-msgid "FILE"
-msgstr "FICHIER"
+msgid "file"
+msgstr "fichier"
 
 #: isoquery/cmdline_parser.py:43
 #, python-format
-msgid "Use specified XML file with ISO data. Default value: %default"
+msgid "Use another XML file with ISO data (default: %default)."
 msgstr ""
-"Utiliser ce fichier XML comme source des données ISO. Valeur par défaut : %"
-"default"
+"Utiliser ce fichier XML comme source des données ISO. Valeur par défaut : "
+"%default."
 
 #: isoquery/cmdline_parser.py:47
-msgid "LOCALE"
-msgstr "LOCALE"
+msgid "locale"
+msgstr "locale"
 
 #: isoquery/cmdline_parser.py:48
-msgid "Use this locale for output"
-msgstr "Utiliser ces paramètres régionaux (« locale ») pour la réponse"
+msgid "Use this locale for output."
+msgstr "Utiliser ces paramètres régionaux (« locale ») pour la réponse."
 
 #: isoquery/cmdline_parser.py:51
-msgid "Display the name for the supplied codes (default)"
-msgstr "Retourne le nom correspondant au code demandé (défaut)"
+msgid "Name for the supplied codes (default)."
+msgstr "Nom correspondant au code demandé (défaut)."
 
-#: isoquery/cmdline_parser.py:55
+#: isoquery/cmdline_parser.py:54
 msgid ""
-"Display the official name for the supplied codes. This may be the same as --"
-"name. (Only applies to ISO 3166)"
+"Official name for the supplied codes. This may be the same as --name (only "
+"applies to ISO 3166)."
 msgstr ""
-"Retourne le nom officiel correspondant au code demandé. Cette valeur peut "
+"Retourner le nom officiel correspondant au code demandé. Cette valeur peut "
 "être identique à --name. Cette option n'est utile que pour ISO 3166."
 
-#: isoquery/cmdline_parser.py:60
+#: isoquery/cmdline_parser.py:59
 msgid ""
-"Display the common name for the supplied codes. This may be the same as --"
-"name. (Only applies to ISO 3166)"
+"Common name for the supplied codes. This may be the same as --name (only "
+"applies to ISO 3166)."
 msgstr ""
-"Retourne le nom courant correspondant au code demandé. Cette valeur peut "
+"Retourner le nom courant correspondant au code demandé. Cette valeur peut "
 "être identique à --name. Cette option n'est utile que pour ISO 3166."
 
-#: isoquery/cmdline_parser.py:66
-msgid "Separate entries with a NULL character instead of newline"
+#: isoquery/cmdline_parser.py:65
+msgid "Separate entries with a NULL character instead of newline."
 msgstr ""
-"Séparer les entrées avec un caractère NULL au lieu d'un retour à la ligne"
+"Séparer les entrées avec un caractère NULL au lieu d'un retour à la ligne."
 
-#: isoquery/cmdline_parser.py:70
-msgid "Show this information"
-msgstr "Afficher cette aide"
+#: isoquery/cmdline_parser.py:69
+msgid "Show summary of options."
+msgstr "Afficher un résumé des options."
 
-#: isoquery/cmdline_parser.py:74
-msgid "Show program version and copyright"
+#: isoquery/cmdline_parser.py:73
+msgid "Show program version and copyright."
 msgstr "Afficher la version du programme et les informations de copyright."
 
-#: isoquery/cmdline_parser.py:92
+#: isoquery/cmdline_parser.py:91
 #, python-format
 msgid "isoquery: ISO standard '%(standard)s' is not supported.\n"
 msgstr "isoquery : norme ISO « %(standard)s » non gérée.\n"
@@ -104,14 +105,14 @@ msgid "isoquery %(version)s"
 msgstr "isoquery %(version)s"
 
 #: isoquery/cmdline_parser.py:127
-msgid "Copyright © 2007-2010 Tobias Quathamer"
-msgstr "Copyright © 2007-2010 Tobias Quathamer"
+msgid "Copyright © 2007-2011 Tobias Quathamer"
+msgstr "Copyright © 2007-2011 Tobias Quathamer"
 
 #. TRANSLATORS: Please change the uppercase words as appropriate for
 #. your language.
 #: isoquery/cmdline_parser.py:130
 msgid "Translation to LANGUAGE Copyright © YEAR YOUR-NAME"
-msgstr "Traduction française Copyright © 2007-2010 Christian Perrier"
+msgstr "Traduction française Copyright © 2007-2011 Christian Perrier"
 
 #: isoquery/xmlfile.py:42
 #, python-format
@@ -122,7 +123,8 @@ msgstr "isoquery : Le fichier « %(filename)s » n'a pas pu être ouvert.\n"
 #, python-format
 msgid "isoquery: The file '%(filename)s' could not be parsed correctly.\n"
 msgstr ""
-"isoquery : Le fichier « %(filename)s » n'a pas pu être analysé correctement.\n"
+"isoquery : Le fichier « %(filename)s » n'a pas pu être analysé "
+"correctement.\n"
 
 #: isoquery/xmlfile.py:52
 #, python-format
@@ -130,8 +132,8 @@ msgid ""
 "isoquery: The file '%(filename)s' does not contain valid ISO %(standard)s "
 "data.\n"
 msgstr ""
-"isoquery : Le fichier « %(filename)s » ne contient pas de données ISO-%"
-"(standard)s valables.\n"
+"isoquery : Le fichier « %(filename)s » ne contient pas de données ISO-"
+"%(standard)s valables.\n"
 
 #: isoquery/xmlfile.py:71
 #, python-format
