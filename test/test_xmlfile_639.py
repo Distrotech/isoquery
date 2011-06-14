@@ -1,6 +1,6 @@
 # - encoding: UTF-8 -
 #
-# Copyright © 2007-2010 Tobias Quathamer
+# Copyright © 2007-2011 Tobias Quathamer
 #
 # This file is part of isoquery.
 #
@@ -175,8 +175,8 @@ tib\tbod\tbo\tTibetisch
             xml.show_single_code(code)
         self.assertEqual(output.getvalue(),
 """\
-heb\theb\the\tHébreu
-alg\talg\t\tAlgonquines, langues
+heb\theb\the\thébreu
+alg\talg\t\talgonquines, langues
 """)
         # Revert output capturing
         sys.stdout = orig_stdout

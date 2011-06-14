@@ -1,6 +1,6 @@
 # - encoding: UTF-8 -
 #
-# Copyright © 2007-2010 Tobias Quathamer
+# Copyright © 2007-2011 Tobias Quathamer
 #
 # This file is part of isoquery.
 #
@@ -33,45 +33,44 @@ class CmdlineParser:
         self.parser = optparse.OptionParser(usage=usage, add_help_option=False)
         self.parser.add_option('-i', '--iso',
                                default='3166',
-                               metavar=_("STANDARD"),
+                               metavar=_("standard"),
                                help=_("The ISO standard to use. " \
-                               "Possible values: 639, 639-3, 3166, 3166-2, 4217, 15924. " \
-                               "Default value: %default"))
+                               "Possible values: 639, 639-3, 3166, 3166-2, 4217, 15924 " \
+                               "(default: %default)."))
         self.parser.add_option('-x', '--xmlfile',
                                default='/usr/share/xml/iso-codes/iso_3166.xml',
-                               metavar=_("FILE"),
-                               help=_("Use specified XML file with ISO data. " \
-                               "Default value: %default"))
+                               metavar=_("file"),
+                               help=_("Use another XML file with ISO data " \
+                               "(default: %default)."))
         self.parser.add_option('-l', '--locale',
                                default='',
-                               metavar=_("LOCALE"),
-                               help=_("Use this locale for output"))
+                               metavar=_("locale"),
+                               help=_("Use this locale for output."))
         self.parser.add_option('-n', '--name',
                                action='store_true',
-                               help=_("Display the name for the supplied " \
-                                      "codes (default)"))
+                               help=_("Name for the supplied codes (default)."))
         self.parser.add_option('-o', '--official_name',
                                action='store_true',
-                               help=_("Display the official name for the " \
-                                      "supplied codes. This may be the " \
-                                      "same as --name. (Only applies to ISO 3166)"))
+                               help=_("Official name for the supplied codes. " \
+                                      "This may be the same as --name " \
+                                      "(only applies to ISO 3166)."))
         self.parser.add_option('-c', '--common_name',
                                action='store_true',
-                               help=_("Display the common name for the " \
-                                      "supplied codes. This may be the " \
-                                      "same as --name. (Only applies to ISO 3166)"))
+                               help=_("Common name for the supplied codes. " \
+                                      "This may be the same as --name " \
+                                      "(only applies to ISO 3166)."))
         self.parser.add_option('-0', '--null',
                                action='store_true',
                                dest="use_null_character",
                                help=_("Separate entries with a NULL " \
-                                      "character instead of newline"))
+                                      "character instead of newline."))
         self.parser.add_option('-h', '--help',
                                action='help',
-                               help=_("Show this information"))
+                               help=_("Show summary of options."))
         self.parser.add_option('-v', '--version',
                                action='store_true',
                                dest="show_version",
-                               help=_("Show program version and copyright"))
+                               help=_("Show program version and copyright."))
 
     def parse(self, cmdline=None):
         """Parse the command line"""
@@ -101,7 +100,8 @@ class CmdlineParser:
             self.options.xmlfile += ".xml"
         # Remove extra spaces from locale
         self.options.locale = self.options.locale.strip()
-        # Ensure that the locale does exist for the given ISO standard
+        # If the locale does not exist for the given ISO standard, print a
+        # warning message and use the untranslated (thus English) strings.
         if self.options.locale != "":
             try:
                 t = gettext.translation("iso_" + self.options.iso.replace('-', '_'),
@@ -111,7 +111,7 @@ class CmdlineParser:
                                    "available for ISO %(standard)s.\n").encode("utf-8") % \
                                    {"locale": self.options.locale,
                                    "standard": self.options.iso})
-                sys.exit(1)
+                self.options.locale = ""
         # Set default display attribute to 'name'
         self.options.display_name = "name"
         if self.options.official_name == True:
@@ -124,7 +124,7 @@ class CmdlineParser:
 
     def show_version_and_copyright(self):
         print(_(u"isoquery %(version)s").encode("utf-8") % {"version": __version__})
-        print(_(u"Copyright © 2007-2010 Tobias Quathamer").encode("utf-8"))
+        print(_(u"Copyright © 2007-2011 Tobias Quathamer").encode("utf-8"))
         # TRANSLATORS: Please change the uppercase words as appropriate for
         # your language.
         translation = _(u"Translation to LANGUAGE Copyright © YEAR YOUR-NAME")

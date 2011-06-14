@@ -1,16 +1,17 @@
 # Czech translation of package isoquery.
-# Copyright (C) 2010 Michal Simunek
 # This file is distributed under the same license as the isoquery package.
-# Michal Simunek <michal.simunek@gmail.com>, 2010.
 #
+# Copyright ©
+# Michal Simunek <michal.simunek@gmail.com>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: isoquery\n"
 "Report-Msgid-Bugs-To: toddy@debian.org\n"
-"POT-Creation-Date: 2010-06-30 19:58+0200\n"
-"PO-Revision-Date: 2010-07-20 11:31+0200\n"
+"POT-Creation-Date: 2011-06-01 23:46+0200\n"
+"PO-Revision-Date: 2011-06-02 18:31+0200\n"
 "Last-Translator: Michal Simunek <michal.simunek@gmail.com>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,68 +21,68 @@ msgid "Usage: %prog [options] [ISO codes]"
 msgstr "Používání: %prog [volby] [ISO kódy]"
 
 #: isoquery/cmdline_parser.py:36
-msgid "STANDARD"
-msgstr "STANDARD"
+msgid "standard"
+msgstr "standard"
 
 #: isoquery/cmdline_parser.py:37
 #, python-format
 msgid ""
 "The ISO standard to use. Possible values: 639, 639-3, 3166, 3166-2, 4217, "
-"15924. Default value: %default"
+"15924 (default: %default)."
 msgstr ""
-"ISO standard, který se použije. Možné hodnoty: 639, 639-3, 3166, 3166-2, "
-"4217, 15924. Výchozí hodnota: %default"
+"ISO standard, který se má použít. Možné hodnoty: 639, 639-3, 3166, 3166-2, "
+"4217, 15924. (výchozí: %default)."
 
 #: isoquery/cmdline_parser.py:42
-msgid "FILE"
-msgstr "SOUBOR"
+msgid "file"
+msgstr "soubor"
 
 #: isoquery/cmdline_parser.py:43
 #, python-format
-msgid "Use specified XML file with ISO data. Default value: %default"
-msgstr "Použije zadaný XML soubor s ISO daty. Výchozí hodnota: %default"
+msgid "Use another XML file with ISO data (default: %default)."
+msgstr "Použije jiný XML soubor s ISO daty. (výchozí: %default)."
 
 #: isoquery/cmdline_parser.py:47
-msgid "LOCALE"
-msgstr "LOCALE"
+msgid "locale"
+msgstr "národní prostředí"
 
 #: isoquery/cmdline_parser.py:48
-msgid "Use this locale for output"
-msgstr "Pro výstup použije toto locale"
+msgid "Use this locale for output."
+msgstr "Pro výstup použije toto národní prostředí."
 
 #: isoquery/cmdline_parser.py:51
-msgid "Display the name for the supplied codes (default)"
-msgstr "Zobrazí název dodávaných kódů (výchozí)"
+msgid "Name for the supplied codes (default)."
+msgstr "Název dodávaných kódů (výchozí)."
 
-#: isoquery/cmdline_parser.py:55
+#: isoquery/cmdline_parser.py:54
 msgid ""
-"Display the official name for the supplied codes. This may be the same as --"
-"name. (Only applies to ISO 3166)"
+"Official name for the supplied codes. This may be the same as --name (only "
+"applies to ISO 3166)."
 msgstr ""
-"Zobrazí oficiální název dodávaných kódů. Může být stejný jako  --name. "
-"(Použije se pouze u ISO 3166)"
+"Oficiální název dodávaných kódů. Může být stejný jako  --name (použije se "
+"pouze u ISO 3166)."
 
-#: isoquery/cmdline_parser.py:60
+#: isoquery/cmdline_parser.py:59
 msgid ""
-"Display the common name for the supplied codes. This may be the same as --"
-"name. (Only applies to ISO 3166)"
+"Common name for the supplied codes. This may be the same as --name (only "
+"applies to ISO 3166)."
 msgstr ""
-"Zobrazí obecný název dodávaných kódů. Může být stejný jako  --name. (Použije "
-"se pouze u ISO 3166)"
+"Obecný název dodávaných kódů. Může být stejný jako  --name (použije se pouze "
+"u ISO 3166)."
 
-#: isoquery/cmdline_parser.py:66
-msgid "Separate entries with a NULL character instead of newline"
-msgstr "Oddělí položky mezerou namísto nového řádku"
+#: isoquery/cmdline_parser.py:65
+msgid "Separate entries with a NULL character instead of newline."
+msgstr "Oddělí položky mezerou namísto nového řádku."
 
-#: isoquery/cmdline_parser.py:70
-msgid "Show this information"
-msgstr "Zobrazí tyto informace"
+#: isoquery/cmdline_parser.py:69
+msgid "Show summary of options."
+msgstr "Zobrazí přehled voleb."
 
-#: isoquery/cmdline_parser.py:74
-msgid "Show program version and copyright"
-msgstr "Zobrazí verzi programu a copyright"
+#: isoquery/cmdline_parser.py:73
+msgid "Show program version and copyright."
+msgstr "Zobrazí verzi programu a copyright."
 
-#: isoquery/cmdline_parser.py:92
+#: isoquery/cmdline_parser.py:91
 #, python-format
 msgid "isoquery: ISO standard '%(standard)s' is not supported.\n"
 msgstr "isoquery: ISO standard '%(standard)s' není podporován.\n"
@@ -90,7 +91,9 @@ msgstr "isoquery: ISO standard '%(standard)s' není podporován.\n"
 #, python-format
 msgid ""
 "isoquery: The locale '%(locale)s' is not available for ISO %(standard)s.\n"
-msgstr "isoquery: Locale '%(locale)s' není dostupný pro ISO %(standard)s.\n"
+msgstr ""
+"isoquery: Národní prostředí '%(locale)s' není pro ISO %(standard)s "
+"dostupné.\n"
 
 #: isoquery/cmdline_parser.py:126
 #, python-format
@@ -98,14 +101,14 @@ msgid "isoquery %(version)s"
 msgstr "isoquery %(version)s"
 
 #: isoquery/cmdline_parser.py:127
-msgid "Copyright © 2007-2010 Tobias Quathamer"
-msgstr "Copyright © 2007-2010 Tobias Quathamer"
+msgid "Copyright © 2007-2011 Tobias Quathamer"
+msgstr "Copyright © 2007-2011 Tobias Quathamer"
 
 #. TRANSLATORS: Please change the uppercase words as appropriate for
 #. your language.
 #: isoquery/cmdline_parser.py:130
 msgid "Translation to LANGUAGE Copyright © YEAR YOUR-NAME"
-msgstr "Translation to Czech Copyright © 2010 Michal Šimůnek"
+msgstr "Translation to Czech Copyright © 2010-2011 Michal Šimůnek"
 
 #: isoquery/xmlfile.py:42
 #, python-format
