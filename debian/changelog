@@ -1,3 +1,9 @@
+isoquery (1.5-1ubuntu1) precise; urgency=low
+
+  * Build using dh_python2
+
+ -- Matthias Klose <doko@ubuntu.com>  Sat, 17 Dec 2011 12:28:08 +0000
+
 isoquery (1.5-1) unstable; urgency=low
 
   * New upstream release

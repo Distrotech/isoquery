@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh  $@
+	dh $@ --with=python2
 
 # debhelper v7 does not yet support the waf build system, so
 # some helpers need to be overridden.
