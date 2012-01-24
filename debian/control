@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Tobias Quathamer <toddy@debian.org>
 Build-Depends: debhelper (>= 8)
-Build-Depends-Indep: python-support, python-docutils, po4a
+Build-Depends-Indep: python (>= 2.6.6-3~), python-docutils, po4a
 Standards-Version: 3.9.2
 Vcs-Browser: http://git.debian.org/?p=users/toddy/isoquery.git;a=summary
 Vcs-Git: git://git.debian.org/~toddy/isoquery.git
@@ -21,14 +21,3 @@ Description: Search and display various ISO codes (country, language, ...)
  .
  Moreover, it's possible to get all available translations for
  the ISO standard.
-
-Package: countrycodes
-Architecture: all
-Depends: ${misc:Depends}, isoquery, iso-codes
-Description: ISO 3166 country code finder (transitional dummy package)
- This is a dummy package to ease transition from countrycodes
- to the package isoquery.
- .
- It can be safely removed from your system.
- .
- Use the program isoquery to get information about ISO 3166 country codes.

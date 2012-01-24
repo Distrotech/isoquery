@@ -1,3 +1,19 @@
+isoquery (1.7-1) unstable; urgency=low
+
+  * New upstream release
+    - Fix a UnicodeEncodeError in version output, thanks to David Prévot.
+      Closes: #650746
+    - Use standard distutils setup.py file for building and installing
+      the package, remove waf build system completely. Closes: #654476
+  * Remove transitional package countrycodes
+  * Remove useless README file from package, thanks to David Prévot.
+    Closes: #653759
+  * Update copyright years
+  * Build using dh_python2, patch taken from Ubuntu
+  * Update download location in debian/watch and debian/copyright
+
+ -- Tobias Quathamer <toddy@debian.org>  Tue, 24 Jan 2012 00:08:14 +0100
+
 isoquery (1.5-1) unstable; urgency=low
 
   * New upstream release
