@@ -1,6 +1,6 @@
 # - encoding: UTF-8 -
 #
-# Copyright © 2007-2011 Tobias Quathamer
+# Copyright © 2007-2012 Tobias Quathamer
 #
 # This file is part of isoquery.
 #
@@ -124,12 +124,12 @@ class CmdlineParser:
 
     def show_version_and_copyright(self):
         print(_(u"isoquery %(version)s").encode("utf-8") % {"version": __version__})
-        print(_(u"Copyright © 2007-2011 Tobias Quathamer").encode("utf-8"))
+        print(_(u"Copyright © 2007-2012 Tobias Quathamer").encode("utf-8"))
         # TRANSLATORS: Please change the uppercase words as appropriate for
         # your language.
         translation = _(u"Translation to LANGUAGE Copyright © YEAR YOUR-NAME")
         if translation.find("LANGUAGE") == -1:
-            print(translation)
+            print(translation).encode("utf-8")
         print("""
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

@@ -1,6 +1,6 @@
 # - encoding: UTF-8 -
 #
-# Copyright © 2007-2011 Tobias Quathamer
+# Copyright © 2007-2012 Tobias Quathamer
 #
 # This file is part of isoquery.
 #
@@ -17,4 +17,4 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-__version__ = "1.5"
+__version__ = "1.7"
