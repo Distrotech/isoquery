@@ -21,14 +21,3 @@ Description: Search and display various ISO codes (country, language, ...)
  .
  Moreover, it's possible to get all available translations for
  the ISO standard.
-
-Package: countrycodes
-Architecture: all
-Depends: ${misc:Depends}, isoquery, iso-codes
-Description: ISO 3166 country code finder (transitional dummy package)
- This is a dummy package to ease transition from countrycodes
- to the package isoquery.
- .
- It can be safely removed from your system.
- .
- Use the program isoquery to get information about ISO 3166 country codes.
