@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-01-23 13:11+0100\n"
+"POT-Creation-Date: 2014-05-30 20:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr ""
 #. type: Plain text
 #, no-wrap
 msgid ""
-":Date:            2012-01-23\n"
-":Version:         1.7\n"
+":Date:            2014-05-30\n"
+":Version:         2.0\n"
 ":Manual section:  1\n"
 msgstr ""
 
@@ -80,8 +80,8 @@ msgstr ""
 msgid ""
 "-i standard, --iso=standard  The ISO standard to use. Possible values: "
 "639,\n"
-"                             639-3, 3166, 3166-2, 4217, 15924 (default: "
-"3166).\n"
+"                             639-3, 639-5, 3166, 3166-2, 4217, 15924 "
+"(default: 3166).\n"
 msgstr ""
 
 #. type: Plain text
@@ -260,9 +260,23 @@ msgstr ""
 msgid ""
 "  $ isoquery -i 639-3 aal new spa guc\n"
 "  aal     I       L                       Afade\n"
-"  new     I       L               new     Bhasa, Nepal\n"
+"  new     I       L               new     Newari\n"
 "  spa     I       L       es      spa     Spanish\n"
 "  guc     I       L                       Wayuu\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"ISO 639-5 is also available. The displayed columns are id, parents, and "
+"name. The parents column may be empty."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  $ isoquery -i 639-5 aus tut\n"
+"  aus             Australian languages\n"
+"  tut             Altaic languages\n"
 msgstr ""
 
 #. type: Plain text
@@ -311,6 +325,7 @@ msgstr ""
 msgid ""
 "| */usr/share/xml/iso-codes/iso_639.xml* | "
 "*/usr/share/xml/iso-codes/iso_639_3.xml* | "
+"*/usr/share/xml/iso-codes/iso_639_5.xml* | "
 "*/usr/share/xml/iso-codes/iso_3166.xml* | "
 "*/usr/share/xml/iso-codes/iso_3166_2.xml* | "
 "*/usr/share/xml/iso-codes/iso_4217.xml* | "

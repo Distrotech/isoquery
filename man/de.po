@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the isoquery package.
 #
 # Copyright ©
-# Tobias Quathamer <toddy@debian.org>, 2007, 2008, 2010, 2011.
+# Tobias Quathamer <toddy@debian.org>, 2007, 2008, 2010, 2011, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: isoquery\n"
 "Report-Msgid-Bugs-To: Tobias Quathamer <toddy@debian.org>\n"
-"POT-Creation-Date: 2012-01-23 13:11+0100\n"
-"PO-Revision-Date: 2011-06-01 23:25+0200\n"
+"POT-Creation-Date: 2014-05-30 20:17+0200\n"
+"PO-Revision-Date: 2014-05-30 20:17+0200\n"
 "Last-Translator: Tobias Quathamer <toddy@debian.org>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
@@ -36,12 +36,12 @@ msgstr "Suche und Anzeige verschiedener ISO-Codes (Land, Sprache, ...)\n"
 #. type: Plain text
 #, no-wrap
 msgid ""
-":Date:            2012-01-23\n"
-":Version:         1.7\n"
+":Date:            2014-05-30\n"
+":Version:         2.0\n"
 ":Manual section:  1\n"
 msgstr ""
-":Date:            23\\. Januar 2012\n"
-":Version:         1.7\n"
+":Date:            30\\. Mai 2014\n"
+":Version:         2.0\n"
 ":Manual section:  1\n"
 
 #. type: Title =
@@ -93,8 +93,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "-i standard, --iso=standard  The ISO standard to use. Possible values: 639,\n"
-"                             639-3, 3166, 3166-2, 4217, 15924 (default: 3166).\n"
-msgstr "-i Standard, --iso=Standard     Der gewünschte ISO-Standard. Mögliche Werte: 639, 639-3, 3166, 3166-2, 4217, 15924 (Voreinstellung: 3166).\n"
+"                             639-3, 639-5, 3166, 3166-2, 4217, 15924 (default: 3166).\n"
+msgstr "-i Standard, --iso=Standard     Der gewünschte ISO-Standard. Mögliche Werte: 639, 639-3, 639-5, 3166, 3166-2, 4217, 15924 (Voreinstellung: 3166).\n"
 
 #. type: Plain text
 #, no-wrap
@@ -106,7 +106,7 @@ msgstr "-x Datei, --xmlfile=Datei   Eine andere XML-*Datei* mit ISO-Daten verwen
 #. type: Plain text
 #, no-wrap
 msgid "-l locale, --locale=locale   Use this *locale* for output.\n"
-msgstr "-l Locale, --locale=Locale  Diese *Locale* für die Ausgabe verwenden."
+msgstr "-l Locale, --locale=Locale  Diese *Locale* für die Ausgabe verwenden.\n"
 
 #. type: Plain text
 #, no-wrap
@@ -132,17 +132,17 @@ msgstr "-c, --common_name           Üblicher Name der übergebenen Codes. Dies 
 msgid ""
 "-0, --null                   Separate entries with a NULL character instead\n"
 "                             of newline.\n"
-msgstr "-0, --null                  Einträge durch ein NULL-Zeichen anstatt des Zeilenumbruches voneinander trennen."
+msgstr "-0, --null                  Einträge durch ein NULL-Zeichen anstatt des Zeilenumbruches voneinander trennen.\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "-h, --help                   Show summary of options.\n"
-msgstr "-h, --help                  Zusammenfassung der Optionen anzeigen."
+msgstr "-h, --help                  Zusammenfassung der Optionen anzeigen.\n"
 
 #. type: Plain text
 #, no-wrap
 msgid "-v, --version                Show program version and copyright.\n"
-msgstr "-v, --version               Anzeige der Programmversion und des Copyrights."
+msgstr "-v, --version               Anzeige der Programmversion und des Copyrights.\n"
 
 #. type: Title =
 #, no-wrap
@@ -319,15 +319,34 @@ msgstr ""
 msgid ""
 "  $ isoquery -i 639-3 aal new spa guc\n"
 "  aal     I       L                       Afade\n"
-"  new     I       L               new     Bhasa, Nepal\n"
+"  new     I       L               new     Newari\n"
 "  spa     I       L       es      spa     Spanish\n"
 "  guc     I       L                       Wayuu\n"
 msgstr ""
 "  $ isoquery -i 639-3 aal new spa guc\n"
 "  aal     I       L                       Afade\n"
-"  new     I       L               new     Bhasa, Nepal\n"
+"  new     I       L               new     Newari\n"
 "  spa     I       L       es      spa     Spanish\n"
 "  guc     I       L                       Wayuu\n"
+
+#. type: Plain text
+msgid ""
+"ISO 639-5 is also available. The displayed columns are id, parents, and "
+"name. The parents column may be empty."
+msgstr ""
+"ISO 639-5 ist ebenfalls verfügbar. Die angezeigten Spalten sind id, parents "
+"und name. Die Spalte parents kann leer sein."
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  $ isoquery -i 639-5 aus tut\n"
+"  aus             Australian languages\n"
+"  tut             Altaic languages\n"
+msgstr ""
+"  $ isoquery -i 639-5 aus tut\n"
+"  aus             Australian languages\n"
+"  tut             Altaic languages\n"
 
 #. type: Plain text
 msgid ""
@@ -389,12 +408,13 @@ msgstr ""
 #. type: Plain text
 msgid ""
 "| */usr/share/xml/iso-codes/iso_639.xml* | */usr/share/xml/iso-codes/"
-"iso_639_3.xml* | */usr/share/xml/iso-codes/iso_3166.xml* | */usr/share/xml/"
-"iso-codes/iso_3166_2.xml* | */usr/share/xml/iso-codes/iso_4217.xml* | */usr/"
-"share/xml/iso-codes/iso_15924.xml*"
+"iso_639_3.xml* | */usr/share/xml/iso-codes/iso_639_5.xml* | */usr/share/xml/"
+"iso-codes/iso_3166.xml* | */usr/share/xml/iso-codes/iso_3166_2.xml* | */usr/"
+"share/xml/iso-codes/iso_4217.xml* | */usr/share/xml/iso-codes/iso_15924.xml*"
 msgstr ""
 "| */usr/share/xml/iso-codes/iso_639.xml*\n"
 "| */usr/share/xml/iso-codes/iso_639_3.xml*\n"
+"| */usr/share/xml/iso-codes/iso_639_5.xml*\n"
 "| */usr/share/xml/iso-codes/iso_3166.xml*\n"
 "| */usr/share/xml/iso-codes/iso_3166_2.xml*\n"
 "| */usr/share/xml/iso-codes/iso_4217.xml*\n"
