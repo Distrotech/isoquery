@@ -5,8 +5,8 @@ isoquery
 Search and display various ISO codes (country, language, ...)
 -------------------------------------------------------------
 
-:Date:            2012-01-23
-:Version:         1.7
+:Date:            2014-05-30
+:Version:         2.0
 :Manual section:  1
 
 
@@ -35,7 +35,7 @@ This program follows the usual GNU command line syntax, with long options
 starting with two dashes ('**-**'). **isoquery** supports the following options:
 
 -i standard, --iso=standard  The ISO standard to use. Possible values: 639,
-                             639-3, 3166, 3166-2, 4217, 15924 (default: 3166).
+                             639-3, 639-5, 3166, 3166-2, 4217, 15924 (default: 3166).
 
 -x file, --xmlfile=file      Use another XML *file* with ISO data
                              (default: /usr/share/xml/iso-codes/iso_3166.xml).
@@ -140,9 +140,18 @@ may be empty.
 
   $ isoquery -i 639-3 aal new spa guc
   aal     I       L                       Afade
-  new     I       L               new     Bhasa, Nepal
+  new     I       L               new     Newari
   spa     I       L       es      spa     Spanish
   guc     I       L                       Wayuu
+
+ISO 639-5 is also available. The displayed columns are id, parents,
+and name. The parents column may be empty.
+
+::
+
+  $ isoquery -i 639-5 aus tut
+  aus             Australian languages
+  tut             Altaic languages
 
 You can get selected translations of currency names from the ISO 4217
 standard by using the following command. The first two columns are the
@@ -173,6 +182,7 @@ By default, the XML files provided by the **iso-codes** package will be used.
 
 | */usr/share/xml/iso-codes/iso_639.xml*
 | */usr/share/xml/iso-codes/iso_639_3.xml*
+| */usr/share/xml/iso-codes/iso_639_5.xml*
 | */usr/share/xml/iso-codes/iso_3166.xml*
 | */usr/share/xml/iso-codes/iso_3166_2.xml*
 | */usr/share/xml/iso-codes/iso_4217.xml*

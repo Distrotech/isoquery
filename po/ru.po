@@ -2,62 +2,80 @@
 # This file is distributed under the same license as the isoquery package.
 #
 # Copyright ©
-# Yuri Kozlov <yuray@komyakino.ru>, 2010, 2011.
+# Yuri Kozlov <yuray@komyakino.ru>, 2010, 2011, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: isoquery\n"
 "Report-Msgid-Bugs-To: toddy@debian.org\n"
-"POT-Creation-Date: 2012-01-07 23:33+0100\n"
-"PO-Revision-Date: 2011-06-02 20:33+0400\n"
+"POT-Creation-Date: 2014-05-08 10:15+0200\n"
+"PO-Revision-Date: 2014-05-08 18:19+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: isoquery/cmdline_parser.py:30
-msgid "Usage: %prog [options] [ISO codes]"
-msgstr "Использование: %prog [параметры] [коды ISO]"
-
-#: isoquery/cmdline_parser.py:36
-msgid "standard"
-msgstr "стандарт"
-
-#: isoquery/cmdline_parser.py:37
+#: src/isoquery.vala:56
 #, python-format
+msgid "isoquery: ISO standard \"%(standard)s\" is not supported.\n"
+msgstr "isoquery: Стандарт ISO «%(standard)s» не поддерживается.\n"
+
+#: src/isoquery.vala:64
+#, python-format
+msgid "isoquery %(version)s\n"
+msgstr "isoquery %(version)s\n"
+
+#: src/isoquery.vala:66
+msgid "Copyright © 2007-2014 Tobias Quathamer\n"
+msgstr "Copyright © 2007-2014 Tobias Quathamer\n"
+
+#. TRANSLATORS: Please change the uppercase words as
+#. appropriate for your language.
+#: src/isoquery.vala:69
+msgid "Translation to LANGUAGE Copyright © YEAR YOUR-NAME\n"
+msgstr "Перевод на русский Copyright © 2010-2014 Юрий Козлов\n"
+
+#: src/isoquery.vala:99
 msgid ""
-"The ISO standard to use. Possible values: 639, 639-3, 3166, 3166-2, 4217, "
-"15924 (default: %default)."
+"The ISO standard to use. Possible values: 639, 639-3, 639-5, 3166, 3166-2, "
+"4217, 15924 (default: 3166)."
 msgstr ""
-"Использовать стандарт ISO. Возможные значения: 639, 639-3, 3166, 3166-2, "
-"4217, 15924 (по умолчанию: %default)."
+"Использовать стандарт ISO. Возможные значения: 639, 639-3, 639-5, 3166, "
+"3166-2, 4217, 15924 (по умолчанию: 3166)."
 
-#: isoquery/cmdline_parser.py:42
-msgid "file"
-msgstr "файл"
+#: src/isoquery.vala:100
+msgid "STANDARD"
+msgstr "СТАНДАРТ"
 
-#: isoquery/cmdline_parser.py:43
-#, python-format
-msgid "Use another XML file with ISO data (default: %default)."
-msgstr "Использовать заданный файл XML с данными ISO (по умолчанию: %default)."
+#: src/isoquery.vala:104
+msgid ""
+"Use another XML file with ISO data (default: /usr/share/xml/iso-codes/"
+"iso_3166.xml)"
+msgstr ""
+"Использовать другой файл XML с данными ISO (по умолчанию: /usr/share/xml/iso-"
+"codes/iso_3166.xml)"
 
-#: isoquery/cmdline_parser.py:47
-msgid "locale"
-msgstr "локаль"
+#: src/isoquery.vala:105
+msgid "FILE"
+msgstr "ФАЙЛ"
 
-#: isoquery/cmdline_parser.py:48
+#: src/isoquery.vala:109
 msgid "Use this locale for output."
 msgstr "Использовать данную локаль при выводе."
 
-#: isoquery/cmdline_parser.py:51
+#: src/isoquery.vala:110
+msgid "LOCALE"
+msgstr "ЛОКАЛЬ"
+
+#: src/isoquery.vala:114
 msgid "Name for the supplied codes (default)."
 msgstr "Показать имена имеющих кодов (по умолчанию)."
 
-#: isoquery/cmdline_parser.py:54
+#: src/isoquery.vala:118
 msgid ""
 "Official name for the supplied codes. This may be the same as --name (only "
 "applies to ISO 3166)."
@@ -65,7 +83,7 @@ msgstr ""
 "Показать официальные имена имеющих кодов. Может быть тоже, что и с --name "
 "(применимо только к ISO 3166)."
 
-#: isoquery/cmdline_parser.py:59
+#: src/isoquery.vala:122
 msgid ""
 "Common name for the supplied codes. This may be the same as --name (only "
 "applies to ISO 3166)."
@@ -73,64 +91,72 @@ msgstr ""
 "Показать общие имена имеющих кодов. Может быть тоже, что и с --name "
 "(применимо только к ISO 3166)."
 
-#: isoquery/cmdline_parser.py:65
+#: src/isoquery.vala:126
 msgid "Separate entries with a NULL character instead of newline."
 msgstr "Разделять элементы символом NULL, а не символом новой строки."
 
-#: isoquery/cmdline_parser.py:69
-msgid "Show summary of options."
-msgstr "Показать справку по параметрам."
-
-#: isoquery/cmdline_parser.py:73
+#: src/isoquery.vala:130
 msgid "Show program version and copyright."
 msgstr "Показать версию программы и инф. об авторском праве."
 
-#: isoquery/cmdline_parser.py:91
-#, python-format
-msgid "isoquery: ISO standard '%(standard)s' is not supported.\n"
-msgstr "isoquery: Стандарт ISO «%(standard)s» не поддерживается.\n"
+#: src/isoquery.vala:136
+msgid "[ISO codes]"
+msgstr "[коды ISO]"
 
-#: isoquery/cmdline_parser.py:110
+#: src/isoquery.vala:141 src/handle_639.vala:57 src/handle_639.vala:70
+#: src/handle_639_3.vala:64 src/handle_639_3.vala:77 src/handle_639_5.vala:56
+#: src/handle_639_5.vala:69 src/handle_3166.vala:65 src/handle_3166.vala:78
+#: src/handle_3166_2.vala:58 src/handle_3166_2.vala:71 src/handle_4217.vala:56
+#: src/handle_4217.vala:69 src/handle_15924.vala:56 src/handle_15924.vala:69
 #, python-format
+msgid "isoquery: %(error_message)s\n"
+msgstr "isoquery: %(error_message)s\n"
+
+#: src/isoquery.vala:143
 msgid ""
-"isoquery: The locale '%(locale)s' is not available for ISO %(standard)s.\n"
-msgstr "isoquery: Локаль «%(locale)s» недоступна для ISO %(standard)s.\n"
-
-#: isoquery/cmdline_parser.py:126
-#, python-format
-msgid "isoquery %(version)s"
-msgstr "isoquery %(version)s"
-
-#: isoquery/cmdline_parser.py:127
-msgid "Copyright © 2007-2012 Tobias Quathamer"
-msgstr "Copyright © 2007-2012 Tobias Quathamer"
-
-#. TRANSLATORS: Please change the uppercase words as appropriate for
-#. your language.
-#: isoquery/cmdline_parser.py:130
-msgid "Translation to LANGUAGE Copyright © YEAR YOUR-NAME"
-msgstr "Перевод на русский Copyright © 2010-2011 Юрий Козлов"
-
-#: isoquery/xmlfile.py:42
-#, python-format
-msgid "isoquery: The file '%(filename)s' could not be opened.\n"
-msgstr "isoquery: Не удалось открыть файл «%(filename)s».\n"
-
-#: isoquery/xmlfile.py:46
-#, python-format
-msgid "isoquery: The file '%(filename)s' could not be parsed correctly.\n"
-msgstr "isoquery: Не удалось проанализировать файл «%(filename)s».\n"
-
-#: isoquery/xmlfile.py:52
-#, python-format
-msgid ""
-"isoquery: The file '%(filename)s' does not contain valid ISO %(standard)s "
-"data.\n"
+"Run \"isoquery --help\" to see a full list of available command line "
+"options.\n"
 msgstr ""
-"isoquery: Файл «%(filename)s» не содержит допустимых данных ISO "
-"%(standard)s.\n"
+"Запустите «isoquery --help», чтобы увидеть полный список доступных "
+"параметров командной строки.\n"
 
-#: isoquery/xmlfile.py:71
-#, python-format
-msgid "isoquery: The code '%(code)s' is not defined in ISO %(standard)s.\n"
-msgstr "isoquery: Код «%(code)s» не определён в ISO %(standard)s.\n"
+#: src/isoquery.vala:176
+msgid "isoquery: Internal error. Please report this bug.\n"
+msgstr "isoquery: Внутренняя ошибка. Пожалуйста, сообщите о ней.\n"
+
+#~ msgid "isoquery: The file \"%(filename)s\" could not be opened.\n"
+#~ msgstr "isoquery: Не удалось открыть файл «%(filename)s».\n"
+
+#~ msgid "isoquery: The file \"%(filename)s\" could not be parsed correctly.\n"
+#~ msgstr "isoquery: Не удалось проанализировать файл «%(filename)s».\n"
+
+#~ msgid ""
+#~ "isoquery: The file \"%(filename)s\" does not contain valid ISO "
+#~ "%(standard)s data.\n"
+#~ msgstr ""
+#~ "isoquery: Файл «%(filename)s» не содержит допустимых данных ISO "
+#~ "%(standard)s.\n"
+
+#~ msgid ""
+#~ "isoquery: The code \"%(code)s\" is not defined in ISO %(standard)s.\n"
+#~ msgstr "isoquery: Код «%(code)s» не определён в ISO %(standard)s.\n"
+
+#~ msgid "Usage: %prog [options] [ISO codes]"
+#~ msgstr "Использование: %prog [параметры] [коды ISO]"
+
+#~ msgid "standard"
+#~ msgstr "стандарт"
+
+#~ msgid "file"
+#~ msgstr "файл"
+
+#~ msgid "locale"
+#~ msgstr "локаль"
+
+#~ msgid "Show summary of options."
+#~ msgstr "Показать справку по параметрам."
+
+#~ msgid ""
+#~ "isoquery: The locale \"%(locale)s\" is not available for ISO "
+#~ "%(standard)s.\n"
+#~ msgstr "isoquery: Локаль «%(locale)s» недоступна для ISO %(standard)s.\n"

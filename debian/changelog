@@ -1,3 +1,20 @@
+isoquery (2.0-1) unstable; urgency=low
+
+  * Imported Upstream version 2.0
+    - Significantly faster than previous version. Closes: #649675
+    - Correctly handles ISO 639-3 again. Closes: #698882
+  * Use debhelper v9
+  * Update URLs for git repository
+  * Update Standards-Version to 3.9.5, no changes needed
+  * Update dependencies of package
+  * Update URL for debian/watch
+  * Update copyright years
+  * Use dh-autoreconf during build
+  * Reduce debian/rules, documentation is now handled correctly by debhelper
+  * Add AUTHORS to installed docs
+
+ -- Tobias Quathamer <toddy@debian.org>  Fri, 30 May 2014 21:32:46 +0200
+
 isoquery (1.7-1) unstable; urgency=low
 
   * New upstream release
