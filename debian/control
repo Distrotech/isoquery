@@ -3,11 +3,11 @@ Section: misc
 Priority: optional
 Maintainer: Tobias Quathamer <toddy@debian.org>
 Build-Depends: debhelper (>= 9), dh-autoreconf, libisocodes-dev (>= 1.2),
- valac (>= 0.20), libglib2.0-dev, libxml2-dev, libgee-dev,
+ valac (>= 0.20), libglib2.0-dev, libxml2-dev, libgee-0.8-dev,
  python-docutils, po4a
 Standards-Version: 3.9.5
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=users/toddy/isoquery.git;a=summary
-Vcs-Git: git://anonscm.debian.org/users/toddy/isoquery.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=users/toddy/debian/isoquery.git;a=summary
+Vcs-Git: git://anonscm.debian.org/users/toddy/debian/isoquery.git
 
 Package: isoquery
 Architecture: any
