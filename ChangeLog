@@ -1,3 +1,24 @@
+Isoquery 2.0
+============
+30 May 2014
+
+* Complete rewrite in Vala, significantly faster than
+  previous Python implementation
+* Uses libisocodes to access iso-codes XML data
+* Supports the newly added ISO 639-5 codes
+* Updated translations:
+  - Danish, thanks to Joe Hansen
+  - Russian, thanks to Yuri Kozlov
+  - French, thanks to Christian Perrier
+  - Portuguese, thanks to Américo Monteiro
+  - German, thanks to Tobias Quathamer
+  - Swedish, thanks to Martin Bagge
+* Updated manpage translations:
+  - German, thanks to Tobias Quathamer
+  - French, thanks to David Prévot
+  - Portuguese, thanks to Américo Monteiro
+
+
 Isoquery 1.7
 ============
 23 January 2012
