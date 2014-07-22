@@ -1,12 +1,4 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --with=python2
-
-# Remove the COPYING file, it's included in debian/copyright.
-# README contains just instructions for building and installing
-# the program, not needed in the debian package.
-override_dh_installdocs:
-	dh_installdocs
-	rm $(CURDIR)/debian/isoquery/usr/share/doc/isoquery/COPYING
-	rm $(CURDIR)/debian/isoquery/usr/share/doc/isoquery/README
+	dh $@ --with autoreconf

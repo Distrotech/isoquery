@@ -1,8 +1,27 @@
-isoquery (1.7-1build1) trusty; urgency=medium
+isoquery (2.0-2) unstable; urgency=medium
 
-  * Rebuild to drop files installed into /usr/share/pyshared.
+  * Update Vcs-URLs to Debian packaging
+  * Build-Depend on libgee-0.8-dev, fixes FTBFS.
+    Thanks to David Suárez <david.sephirot@gmail.com> (Closes: #755319)
 
- -- Matthias Klose <doko@ubuntu.com>  Sun, 23 Feb 2014 13:47:50 +0000
+ -- Tobias Quathamer <toddy@debian.org>  Tue, 22 Jul 2014 10:05:49 +0200
+
+isoquery (2.0-1) unstable; urgency=low
+
+  * Imported Upstream version 2.0
+    - Significantly faster than previous version. Closes: #649675
+    - Correctly handles ISO 639-3 again. Closes: #698882
+  * Use debhelper v9
+  * Update URLs for git repository
+  * Update Standards-Version to 3.9.5, no changes needed
+  * Update dependencies of package
+  * Update URL for debian/watch
+  * Update copyright years
+  * Use dh-autoreconf during build
+  * Reduce debian/rules, documentation is now handled correctly by debhelper
+  * Add AUTHORS to installed docs
+
+ -- Tobias Quathamer <toddy@debian.org>  Fri, 30 May 2014 21:32:46 +0200
 
 isoquery (1.7-1) unstable; urgency=low
 
